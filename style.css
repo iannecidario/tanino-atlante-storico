@@ -937,38 +937,6 @@ h2 {
   }
 
   .journey-panel {
-    left: 0.75rem;
-    right: 0.75rem;
-    bottom: 0.75rem;
-    grid-template-columns: 1fr;
-    gap: 0.55rem;
-    padding: 0.7rem;
-  }
-
-  .journey-panel__actions,
-  .step-controls,
-  .quick-jump,
-  .journey-status,
-  .journey-timeline {
-    grid-column: 1;
-  }
-
-  .journey-panel__actions,
-  .step-controls {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  #followJourneyButton,
-  #stopJourneyButton {
-    grid-column: 1 / -1;
-  }
-
-  .journey-status {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  body:not(.sidebar-collapsed) .journey-panel {
     display: none;
   }
 
