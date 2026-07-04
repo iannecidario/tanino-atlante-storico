@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Logo Atlante Archeologico della Campania</title>
+  <rect width="96" height="96" rx="8" fill="#111111"/>
+  <path d="M18 78h60" stroke="#C7A44B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M26 72V34h44v38" fill="none" stroke="#F5F5F5" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M22 34h52L48 18 22 34Z" fill="#A4342A" stroke="#C7A44B" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M36 72V45M48 72V45M60 72V45" stroke="#C7A44B" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "name": "Atlante archeologico della Campania",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [14.4871, 40.7484] },
+      "properties": {
+        "id": "pompei",
+        "nome": "Parco Archeologico di Pompei",
+        "descrizioneBreve": "Citta antica vesuviana conservata dall'eruzione del 79 d.C.",
+        "descrizioneEstesa": "Pompei conserva un tessuto urbano romano di eccezionale integrita, con domus, edifici pubblici, botteghe, luoghi di culto e apparati decorativi che documentano la vita della citta prima dell'eruzione vesuviana.",
+        "provincia": "Napoli",
+        "comune": "Pompei",
+        "coordinate": "40.7484, 14.4871",
+        "periodoStorico": "Romano",
+        "tipologia": "Parco archeologico",
+        "fotografia": "",
+        "enteGestore": "Ministero della Cultura - Parco Archeologico di Pompei",
+        "linkUfficiale": "https://pompeiisites.org/",
+        "fonti": ["https://pompeiisites.org/", "https://whc.unesco.org/en/list/829/"],
+        "unesco": true,
+        "parcoArcheologico": true,
+        "museo": false,
+        "areaArcheologica": true,
+        "paroleChiave": ["vesuvio", "domus", "foro", "affreschi", "79 d.C."]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [14.3487, 40.8060] },
+      "properties": {
+        "id": "ercolano",
+        "nome": "Parco Archeologico di Ercolano",
+        "descrizioneBreve": "Centro romano sepolto dall'eruzione del Vesuvio e conservato in alzato.",
+        "descrizioneEstesa": "Ercolano offre una lettura ravvicinata dell'abitare romano, con edifici a piu piani, strutture lignee carbonizzate, decorazioni parietali e spazi pubblici legati alla citta vesuviana.",
+        "provincia": "Napoli",
+        "comune": "Ercolano",
+        "coordinate": "40.8060, 14.3487",
+        "periodoStorico": "Romano",
+        "tipologia": "Parco archeologico",
+        "fotografia": "",
+        "enteGestore": "Ministero della Cultura - Parco Archeologico di Ercolano",
+        "linkUfficiale": "https://ercolano.cultura.gov.it/",
+        "fonti": ["https://ercolano.cultura.gov.it/", "https://whc.unesco.org/en/list/829/"],
+        "unesco": true,
+        "parcoArcheologico": true,
+        "museo": false,
+        "areaArcheologica": true,
+        "paroleChiave": ["vesuvio", "domus", "legno", "79 d.C."]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [14.9964, 40.4198] },
+      "properties": {
+        "id": "paestum",
+        "nome": "Parco Archeologico di Paestum",
+        "descrizioneBreve": "Santuario e citta antica celebre per i templi dorici.",
+        "descrizioneEstesa": "Paestum conserva tre grandi templi dorici, il tracciato urbano e aree pubbliche della citta greca e romana, insieme al museo che custodisce materiali provenienti dal territorio.",
+        "provincia": "Salerno",
+        "comune": "Capaccio Paestum",
+        "coordinate": "40.4198, 14.9964",
+        "periodoStorico": "Greco",
+        "tipologia": "Parco archeologico",
+        "fotografia": "",
+        "enteGestore": "Ministero della Cultura - Parchi Archeologici di Paestum e Velia",
+        "linkUfficiale": "https://paestum.cultura.gov.it/",
+        "fonti": ["https://paestum.cultura.gov.it/", "https://whc.unesco.org/en/list/842/"],
+        "unesco": true,
+        "parcoArcheologico": true,
+        "museo": true,
+        "areaArcheologica": true,
+        "paroleChiave": ["templi", "poseidonia", "lucani", "tomba del tuffatore"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [15.1551, 40.1583] },
+      "properties": {
+        "id": "velia",
+        "nome": "Parco Archeologico di Velia",
+        "descrizioneBreve": "Antica Elea, citta della Magna Grecia legata alla scuola eleatica.",
+        "descrizioneEstesa": "Velia conserva resti della citta greca e romana, l'area dell'acropoli, porte urbiche, quartieri e strutture monumentali inserite nel paesaggio del Cilento.",
+        "provincia": "Salerno",
+        "comune": "Ascea",
+        "coordinate": "40.1583, 15.1551",
+        "periodoStorico": "Greco",
+        "tipologia": "Parco archeologico",
+        "fotografia": "",
+        "enteGestore": "Ministero della Cultura - Parchi Archeologici di Paestum e Velia",
+        "linkUfficiale": "https://paestum.cultura.gov.it/velia/",
+        "fonti": ["https://paestum.cultura.gov.it/velia/", "https://whc.unesco.org/en/list/842/"],
+        "unesco": true,
+        "parcoArcheologico": true,
+        "museo": false,
+        "areaArcheologica": true,
+        "paroleChiave": ["elea", "magna grecia", "porta rosa", "cilento"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [14.2508, 40.8536] },
+      "properties": {
+        "id": "mann",
+        "nome": "Museo Archeologico Nazionale di Napoli",
+        "descrizioneBreve": "Museo archeologico con collezioni vesuviane, farnesiane ed egizie.",
+        "descrizioneEstesa": "Il MANN conserva una delle principali raccolte archeologiche italiane, con reperti da Pompei, Ercolano e dall'area vesuviana, oltre alla collezione Farnese e sezioni dedicate alla Campania antica.",
+        "provincia": "Napoli",
+        "comune": "Napoli",
+        "coordinate": "40.8536, 14.2508",
+        "periodoStorico": "Romano",
+        "tipologia": "Museo",
+        "fotografia": "",
+        "enteGestore": "Ministero della Cultura - Museo Archeologico Nazionale di Napoli",
+        "linkUfficiale": "https://mann-napoli.it/",
+        "fonti": ["https://mann-napoli.it/"],
+        "unesco": false,
+        "parcoArcheologico": false,
+        "museo": true,
+        "areaArcheologica": false,
+        "paroleChiave": ["collezione farnese", "mosaici", "egizio", "vesuviano"]
+      }
+    }
+  ]
+}

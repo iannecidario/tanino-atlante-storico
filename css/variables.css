@@ -1,0 +1,18 @@
+:root {
+  --bg: #ede6d8;
+  --surface: #fbf7ef;
+  --surface-soft: #f5efe3;
+  --surface-strong: #e7dac5;
+  --ink: #2b261d;
+  --muted: #70685b;
+  --line: #d1c2aa;
+  --line-strong: #b7a083;
+  --shadow: rgba(55, 43, 25, 0.18);
+  --accent: #7a4c32;
+  --accent-dark: #463225;
+  --accent-soft: #c6a982;
+  --focus: #286b7c;
+  --radius: 8px;
+  --font: "Avenir Next", "Segoe UI", Arial, sans-serif;
+  --font-title: Georgia, "Times New Roman", serif;
+}

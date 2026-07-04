@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Atlante storico digitale del viaggio di Gaetano Iannece nei Balcani tra il 1941 e il 1945, complemento multimediale del libro Tanino l'Aquiloniese.">
+    <meta name="keywords" content="Tanino l'Aquiloniese, Gaetano Iannece, Balcani, Seconda guerra mondiale, atlante storico, mappa interattiva, Aquilonia, Montenegro, Serbia, Albania, Bulgaria, Grecia">
+    <meta name="author" content="Dario Ianneci">
+    <meta name="theme-color" content="#463225">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tanino l'Aquiloniese. Il viaggio di Gaetano Iannece nei Balcani (1941–1945)">
+    <meta property="og:description" content="Atlante storico digitale e mappa interattiva del viaggio di Gaetano Iannece nei Balcani tra il 1941 e il 1945.">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:locale" content="it_IT">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tanino l'Aquiloniese. Il viaggio di Gaetano Iannece nei Balcani (1941–1945)">
+    <meta name="twitter:description" content="Atlante storico digitale e mappa interattiva del viaggio di Gaetano Iannece nei Balcani.">
+    <meta name="twitter:image" content="images/hero.jpg">
+    <title>Tanino l'Aquiloniese. Il viaggio di Gaetano Iannece nei Balcani (1941–1945)</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://basemaps.cartocdn.com">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#map">Vai alla mappa</a>
+
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="Elenco cronologico delle località">
+        <header class="app-header">
+          <p class="eyebrow">1941-1945</p>
+          <h1>Il viaggio di Gaetano Iannece nei Balcani</h1>
+          <p>Prima versione della mappa cronologica, costruita dai dati geografici del file locale.</p>
+        </header>
+
+        <section class="search-panel" aria-label="Ricerca località">
+          <label for="locationSearch">Cerca località</label>
+          <input id="locationSearch" type="search" placeholder="Nome storico, attuale o Stato" autocomplete="off">
+          <p id="resultSummary" aria-live="polite"></p>
+        </section>
+
+        <section class="period-panel" aria-label="Periodi cronologici">
+          <h2>Periodi</h2>
+          <div id="periodLayers" class="period-layers"></div>
+        </section>
+
+        <section class="legend-panel" aria-label="Legenda degli Stati">
+          <h2>Stati</h2>
+          <div id="stateLegend" class="state-legend"></div>
+        </section>
+
+        <section class="timeline-panel" aria-label="Elenco cronologico completo">
+          <h2>Itinerario</h2>
+          <ol id="locationList" class="location-list"></ol>
+        </section>
+      </aside>
+
+      <section class="map-area" aria-label="Mappa del viaggio">
+        <div class="map-toolbar">
+          <button id="fitRouteButton" type="button">Vista completa</button>
+          <button id="toggleSidebarButton" type="button" aria-controls="sidebar" aria-expanded="true">Elenco</button>
+        </div>
+        <section class="journey-panel" aria-label="Navigazione del viaggio">
+          <div class="journey-panel__actions">
+            <button id="followJourneyButton" type="button">▶ Segui il viaggio</button>
+            <button id="pauseJourneyButton" type="button" disabled>Pausa</button>
+            <button id="stopJourneyButton" type="button" disabled>Interrompi</button>
+          </div>
+          <div class="step-controls" aria-label="Navigazione cronologica">
+            <button id="previousStopButton" type="button">◀ Tappa precedente</button>
+            <button id="nextStopButton" type="button">▶ Tappa successiva</button>
+          </div>
+          <label class="quick-jump" for="quickJumpSelect">
+            <span>Vai direttamente a...</span>
+            <select id="quickJumpSelect">
+              <option value="">Seleziona una località</option>
+            </select>
+          </label>
+          <div class="journey-status" id="journeyStatus" aria-live="polite">
+            <span>Periodo: <strong id="statusPeriod">-</strong></span>
+            <span>Anno: <strong id="statusYear">-</strong></span>
+            <span>Tappa: <strong id="statusStep">-</strong></span>
+            <span>Stato: <strong id="statusState">-</strong></span>
+          </div>
+          <div class="journey-timeline" aria-label="Timeline 1941-1945">
+            <div class="journey-timeline__labels">
+              <span>1941</span>
+              <span>1945</span>
+            </div>
+            <input id="journeyTimeline" type="range" min="1" max="35" value="35" step="1">
+          </div>
+        </section>
+        <div id="journeyMessage" class="journey-message" role="status" aria-live="polite" hidden></div>
+        <div id="map" class="map"></div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
