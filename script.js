@@ -33,6 +33,8 @@ const elements = {
   stop: document.querySelector("#stopJourneyButton"),
   previous: document.querySelector("#previousStopButton"),
   next: document.querySelector("#nextStopButton"),
+  mobilePrevious: document.querySelector("#mobilePreviousStopButton"),
+  mobileNext: document.querySelector("#mobileNextStopButton"),
   quickJump: document.querySelector("#quickJumpSelect"),
   timeline: document.querySelector("#journeyTimeline"),
   message: document.querySelector("#journeyMessage"),
@@ -660,6 +662,8 @@ function bindEvents() {
 
   elements.previous.addEventListener("click", () => moveStep(-1));
   elements.next.addEventListener("click", () => moveStep(1));
+  elements.mobilePrevious.addEventListener("click", () => moveStep(-1));
+  elements.mobileNext.addEventListener("click", () => moveStep(1));
   elements.follow.addEventListener("click", startJourney);
   elements.pause.addEventListener("click", toggleJourneyPause);
   elements.stop.addEventListener("click", stopJourney);
